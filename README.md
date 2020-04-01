@@ -2,8 +2,8 @@
 
 ## kernel参数修改， 允许IP转发。
 ### 长期修改
-修改/etc/sysctl.conf
-net.ipv4.ip_forward=1
+修改/etc/sysctl.conf  
+net.ipv4.ip_forward=1  
 执行sysctl -p加载
 ### 临时修改
 echo 1 > /proc/sys/net/ipv4/ip_forward
